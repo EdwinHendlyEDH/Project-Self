@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Poppins&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #000829;
+}
+
+li, h4, a, button {
+    font-family: "Montserrat", sans-serif ;
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
+    text-decoration: none;
+
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 8%;
+}
+
+
+.logo h4 {
+    font-size: 25px;
+    font-weight: bold;
+    cursor:pointer;
+}
+
+.nav_links{
+    display: flex;
+    width: 60%;
+    /* background-color: whitesmoke; */
+    justify-content: center;
+}
+.nav_links li{
+    margin-left: 30px;
+    list-style: none;
+    cursor: pointer;
+}
+.nav_links li a{
+    font-size: 18px;
+    transition: .3s;
+}
+.nav_links li a:hover {
+    color: #1985AB;
+}
+
+.button button{
+    padding: 9px 25px;
+    border-radius: 50px;
+    background-color:#1985AB ;
+    border: 0px;
+    transition: 0.3s ;
+    cursor: pointer;
+}
+
+.button button:hover{
+    background-color: #146C8A;
+}
+
+@media (max-width: 867px){
+    .nav_links{
+        justify-content: space-evenly;
+    }
+    .nav_links li a{
+        font-size: 16px;
+    }
+    button {
+        margin-left: 20px;
+    }
+}
+
+@media (max-width: 784px){
+    header {
+        justify-content: space-around;
+        padding: 30px 5%;
+    }
+}
+
+
