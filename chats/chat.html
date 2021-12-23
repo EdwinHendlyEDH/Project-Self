@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chats</title>
+    <style>
+        div.container  {
+            background-color: whitesmoke;
+            margin: 30px auto;
+            width: 800px;
+            border: 3px solid black;
+            overflow: hidden;
+        }
+        div.container h1 {
+            margin-left: 30px;
+        }
+        div.chatplace {
+            display: flex;
+            border-top:2px solid skyblue ;
+            margin-top: 20px;
+            border-bottom: 2px solid skyblue;
+        }
+        div.container div.contentpic {
+            border-radius: 50%;
+            width: 120px;
+            height: 120px;
+            margin: 15px;
+            overflow: hidden;
+            background-size: cover;
+            background-repeat: no-repeat;
+            border: 2px solid purple;
+        }
+        div.container div.pic1 {
+            background-image: url(../Lightbox1/img/thumbs/hutaothumb.jpg);
+        }
+        div.container div.pic2 {
+            background-image: url(../Lightbox1/img/thumbs/ganyuthumb.jpg);
+        }
+
+        div.container div.content {
+            margin: 20px;
+        }
+        div.container div.chatplace div.content h3 {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        /* try 2 */
+        div.container1 ul{
+            display: flex;
+            overflow: auto;
+            list-style: none;
+            margin-left: 0;
+            padding: 0;
+        }
+
+        div.container .container1 li {
+            text-align: center;
+            margin: 0;
+            width: 120px;
+            margin-left: 10px;
+        }
+        div.container .container1 ul li h3 {
+            margin: 0;
+        }
+        div.container .container1 ul li a{
+            text-decoration: none;
+            color: darkgoldenrod;
+        }
+
+        div.container .container1 ul li .overlay {
+            width: 0;
+            height: 0;
+            overflow: hidden;
+
+        }
+        div.container .container1 ul li .overlay:target {
+            position: fixed;
+            width: auto;
+            height: auto;
+            top: 100px;
+            left: 100px;
+            bottom: 100px;
+            right: 100px;
+            background-color: rgba(0,0,0,.5);
+            padding: 50px 0;
+        }
+        .overlay:target img{
+            max-height: 100%;
+        }
+        div.container .container1 h3:hover {
+            background-color: skyblue;
+        }
+        div.container div.container1 .close {
+            position: absolute;
+            font-size: 20px;
+            top: 0;
+            left: 50px;
+            color: whitesmoke;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Chats</h1>
+        <div class="chatplace">
+            <div class="contentpic pic1">
+
+            </div>
+            <div class="content">
+                <h3>Hutao</h3>
+                <p>Hey! Ganyu nee san, where are you going?</p>
+            </div>
+    
+        </div>
+
+
+        <div class="chatplace">
+            <div class="contentpic pic2">
+
+            </div>
+            <div class="content">
+                <h3>Ganyu</h3>
+                <p>hm sumimasen, i am eating qingxin flowers right now</p>
+            </div>
+    
+        </div>
+
+    </div>
+
+
+<div class="container">
+    <h1>Trying again How to Displaying Items in Flex</h1>
+    <div class="container1">
+        <ul>
+            <li>
+                <a href="#childe">
+                    <img src="../Lightbox1/img/thumbs/childethumb.jpg" alt="">
+                    <h3>Childe</h3>
+
+                </a>
+                <div class="overlay" id="childe">
+                    <a href="#" class="close">Close</a>
+                    <img src="../Lightbox1/img/full/childe.jpg" alt="">
+                </div>
+
+            </li>
+    
+            <li>
+                <img src="../Lightbox1/img/thumbs/zhonglithumb.jpg" alt="">
+                <h3>Zhongli</h3>
+            </li>
+    
+            <li>
+                <img src="../Lightbox1/img/thumbs/ayakathumb.jpg" alt="">
+                <h3>Ayaka</h3>
+            </li>
+    
+            <li>
+                <img src="../Lightbox1/img/thumbs/keqingthumb.jpg" alt="">
+                <h3>Keqing</h3>
+            </li>
+    
+            <li>
+                <a href="#raiden">
+                    <img src="../Lightbox1/img/thumbs/baalthumb.jpg" alt="">
+                    <h3>Raiden Shogun</h3>
+                </a>
+                <div class="overlay" id="raiden">
+                    <a href="#" class="close">Close</a>
+                    <img src="../Lightbox1/img/full/baal.jpg" alt="">
+
+                </div>
+            </li>
+    
+            <li>
+                <img src="../Lightbox1/img/thumbs/albedothumb.jpg" alt="">
+                <h3>Albedo</h3>
+            </li>
+            <li>
+                <img src="../Lightbox1/img/thumbs/albedothumb.jpg" alt="">
+                <h3>Albedo</h3>
+            </li>
+            <li>
+                <img src="../Lightbox1/img/thumbs/albedothumb.jpg" alt="">
+                <h3>Albedo</h3>
+            </li>
+        </ul>
+
+    </div>
+    
+</div>
+</body>
+</html>
