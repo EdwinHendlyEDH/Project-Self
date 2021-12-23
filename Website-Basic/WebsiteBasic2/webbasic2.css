@@ -1,0 +1,255 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* style */
+body {
+    background-color: wheat;
+    font: 16px/28px arial, sans-serif;
+    color: orangered;
+
+}
+.container {
+    margin: 40px auto 0px;
+    width: 960px;
+    background-color: rgb(241, 235, 228);
+    position: relative;
+}
+.container .header {
+    padding: 15px;
+    padding-bottom: 5px;
+}
+.container .header h1 {
+    font-size: 28px;
+    font-weight: bold;
+    color:darkorange ;
+
+}
+.container .header ul li{
+    display: inline-block;
+    margin-top: 8px;
+}
+.container .header ul li a{
+    color: darksalmon;
+    text-decoration: none;
+    margin-right: 4px;
+    padding: 4px;
+}
+.container .header ul li a:hover {
+    color: white;
+    background-color: salmon;
+}
+.container .linkedvideo p {
+    position: absolute;
+    top: 28px;
+    right: 87px;
+}
+.container .linkedvideo p {
+    color: orangered;
+    text-decoration: none;
+    padding: 3px;
+    padding-top: 0px;
+    padding-bottom: 2px;
+}
+.container .linkedvideo p:hover {
+    background-color: salmon;
+    color: white;
+}
+.container .linkedvideo img {
+    position: absolute;
+    width: 80px;
+    top: 3px;
+    right: 0;
+    box-shadow: 5px 5px 5px rgb(255, 0, 0), 
+    -5px -5px 5px rgb(0,0,255);
+    transition: .5s;
+}
+.container .linkedvideo img:hover {
+    box-shadow: 15px 15px 5px rgba(255, 0,0,.6),
+    -15px -15px 5px rgba(0,0,255,.6);
+}
+.container .mainimg {
+    height: 300px;
+    background-image: url(../WebsiteBasic1/review.jpg);
+    background-size: cover;
+    background-position: 0 -70px;
+    border-top: 5px solid darksalmon;
+    border-bottom: 5px solid darkorange;
+}
+.container .main {
+    padding: 20px;
+    width: 600px;
+    box-sizing: border-box;
+    float: left;
+    background-color: gainsboro;
+}
+.container .main .judul {
+    color: darkorange;
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: -5px;
+}
+.container .main .penulis {
+    font-size: 13px;
+    margin-top: -5px;
+}
+.container .main .article p {
+    margin-bottom: 10px;
+    color: darkslategray;
+}
+
+.container .content .sidebar {
+    width: 300px;
+    box-sizing: border-box;
+    float: right;
+    background-color: gainsboro;
+    height: 570px;
+    
+}
+
+.container .sidebar h2 {
+    color: salmon;
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 13px;
+    text-align: center;
+    margin-bottom: 15px;
+
+}
+.container .content .sidebar ul li {
+    text-align: center;
+    background-color: lightgray;
+    border-bottom: 1px solid black;
+    padding: 10px;
+}
+.container .content .sidebar ul li a{
+    text-decoration: none;
+    color: darkorange;
+    padding: 5px;
+    font-weight: bold;
+
+
+}
+.container .content .sidebar ul li a:hover {
+    color: gainsboro;
+    background-color: salmon;
+}
+.container .content .sidebar p {
+    font-size: 13px;
+    line-height: 19px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.container .content .sidebar h4 {
+    color: salmon;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: underline;
+    margin-top: 20px;
+    margin-left: 8px;
+
+}
+.container .content .sidebar img {
+    width: 120px;
+    float: left;
+    padding-right: 15px;
+    margin-left: 8px;
+
+}
+
+.topbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: lightsalmon;
+}
+.topbar ul li {
+    display: inline-block;
+
+}
+.topbar ul li a{
+    text-decoration: none;
+    color: lightyellow;
+    font-size: 20px;
+    margin-left: 20px;
+}
+.topbar ul li a:hover {
+    background-color: lightyellow;
+    color: lightsalmon;
+}
+
+.container .footer {
+    height: 35px;
+    background-color: darkorange;
+    text-align: center;
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+    font-style: italic;
+    font-variant: small-caps;
+    line-height: 35px;
+}
+
+
+
+/* clearfix */
+ .cf:before,
+ .cf:after {
+     content: " "; 
+     display: table; 
+ }
+ 
+ .cf:after {
+     clear: both;
+ }
+ 
+
+ .cf {
+     *zoom: 1;
+ }
