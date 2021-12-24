@@ -1,3 +1,48 @@
+//time settings
+const start = document.getElementsByClassName("start")[0];
+
+start.addEventListener("click", function(){
+    start.style.display = "none";
+    timing();
+});
+function timing(){
+    const time = document.getElementsByClassName("time")[0]
+    const overlay = document.getElementsByClassName("overlay")[0];
+    const waktuStart = new Date().getTime();
+    const waktu = 60 * 1000;
+    time.innerHTML = waktu/1000;
+    const waktuButuh = waktu + 1000; //1000 here is to add another second;
+    setInterval(function(){
+        if(new Date().getTime() - waktuStart > waktuButuh){
+            overlay.style.display = "flex";
+            clearInterval;
+            return;
+        } else {
+            let arr = [];
+            card.forEach(e => {
+                arr.push(e.classList.contains("flipped"));
+            })
+    
+            if(arr.includes(false)){
+                
+            } else {
+                overlay.style.display = "flex";
+                overlay.innerHTML = "YOU WIN!" //in " + (new Date().getTime() - waktuStart) / 1000;
+                clearInterval;
+                return;
+            }
+        }
+
+        time.innerHTML -= 1;
+    
+    }, 1000)
+    
+}
+
+
+
+
+//game mechanics
 const card = document.querySelectorAll(".game-card");
 
 let cardFlipped = false;
@@ -65,4 +110,5 @@ function resetting(){
 })();
 
 
-card.forEach(e => e.addEventListener("click", flipCard))
+card.forEach(e => e.addEventListener("click", flipCard));
+

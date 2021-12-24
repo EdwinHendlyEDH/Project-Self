@@ -4,6 +4,25 @@
     margin: 0;
     box-sizing: border-box;
 }
+.start, .overlay {
+    z-index: 1000;
+    position: absolute;
+    top: 0;
+    left:0;
+    bottom:0;
+    right:0;
+    font-size:150px;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    font-weight: bold;
+    color: rgb(230, 221, 231);
+    background-color: rgba(0,0,0,.8);
+}
+.start {
+    display: flex;
+    cursor: pointer;
+}
 
 body {
     height: 100vh;
@@ -12,6 +31,16 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+.info, .time {
+    color: rgb(13, 44, 110);
+    font-size: 60px;
+    margin-bottom: 50px;
+    font-weight: bold;
+}
+.info {
+    color: rgb(230, 210, 225);
+    font-size: 50px;
 }
 h1 {
     font-family: "poppins";
