@@ -49,10 +49,10 @@ body{
     height: 60px;
     background-color: rgb(226, 226, 226);
     border-radius: 30px;
-    box-shadow: 0 0 10px rgba(0,0,0,.5);
     cursor: pointer;
     transition: .4s;
     position: relative;
+    box-shadow: 0 0 10px rgb(226, 226, 226, .3);
     
 }
 
