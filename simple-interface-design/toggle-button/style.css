@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+body{
+    background-color: rgb(39, 39, 39);
+    transition: .2s;
+}
+
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.container h2 {
+    color: rgb(221, 221, 221);
+    font-size: 30px;
+    font-family: sans-serif;
+    text-align: center;
+}
+.container .info{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.container .glow{
+    --color: 221, 221, 221;    
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: 25px;
+    background-color: rgb(221, 221, 221);
+    animation: spread 1s infinite;
+    
+}
+@keyframes spread{
+    0%{
+        box-shadow: 0 0 0 0 rgba(var(--color));
+    }
+    75%{
+        box-shadow: 0 0 0 16px rgba(var(--color), 0);
+    }
+}
+.container .slider{
+    margin:auto;
+    width: 120px;
+    height: 60px;
+    background-color: rgb(226, 226, 226);
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(0,0,0,.5);
+    cursor: pointer;
+    transition: .4s;
+    position: relative;
+    
+}
+
+.container .slider::before{
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 50px;
+    height: 50px;
+    background: rgb(39, 39, 39);
+    border-radius: 50%;
+    transition: .4s;
+}
+
+.container .slider.color {
+    box-shadow: 0 0 10px rgba(0,0,0,.5);
+    background: rgb(39, 39, 39) ;
+}
+.container .slider.color::before{
+    transform: translateX(60px);
+    background-color: rgb(221, 221, 221);
+}
