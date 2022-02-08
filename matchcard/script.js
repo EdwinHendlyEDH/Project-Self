@@ -9,7 +9,7 @@ function timing(){
     const time = document.getElementsByClassName("time")[0]
     const overlay = document.getElementsByClassName("overlay")[0];
     const waktuStart = new Date().getTime();
-    const waktu = 60 * 1000;
+    const waktu = 40 * 1000;
     time.innerHTML = waktu/1000;
     const waktuButuh = waktu + 1000; //1000 here is to add another second;
     setInterval(function(){
