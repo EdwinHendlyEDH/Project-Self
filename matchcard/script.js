@@ -5,6 +5,7 @@ start.addEventListener("click", function(){
     start.style.display = "none";
     timing();
 });
+
 function timing(){
     const time = document.getElementsByClassName("time")[0]
     const overlay = document.getElementsByClassName("overlay")[0];
