@@ -1,0 +1,93 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    --main-color: rgb(233, 45, 161);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-color);
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    width: 400px;
+    border-radius: 5px;
+    background-color: white;
+    padding: 20px;
+
+}
+
+.container .title{
+    font-weight: 500;
+    font-size: 20px;
+    color: var(--main-color);
+}
+
+.container .description{
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.container .input input {
+    display: block;
+    width: 100%;
+    border: 1px solid rgb(112, 112, 112);
+    outline: none;
+    transition: .2s;
+    height: 40px;
+    line-height: 40px;
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    font-size: 15px;
+    letter-spacing: 2px;
+}
+
+.container .input input::placeholder {
+    color: rgb(170, 170, 170);
+}
+
+.container .input input:focus {
+    border: 2px solid var(--main-color);
+    color: var(--main-color)
+}
+.container .input input:focus::placeholder {
+    color: var(--main-color)
+}
+
+.container .input button {
+    display: block;
+    border: none;
+    outline: none;
+    width: 100%;
+    background-color: var(--main-color);
+    color: white;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 15px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: .2s;
+}
+.container .input button:hover{
+    background: rgba(233, 45, 161, .9);
+}
+
+.input {
+    margin-bottom: 20px;
+}
+
+.ans {
+    text-align: center;
+}
+
+.ans span {
+    color: var(--main-color);
+}
